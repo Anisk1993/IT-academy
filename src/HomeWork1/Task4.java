@@ -1,3 +1,7 @@
+/* Задано число. Определить, близко ли к
+нему другое введенное число (в пределах 10%)
+ */
+
 package HomeWork1;
 import java.util.Scanner;
 public class Task4 {
