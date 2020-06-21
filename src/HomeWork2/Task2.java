@@ -1,5 +1,7 @@
 package HomeWork2;
-
+/*
+Пользователь вводит месяц и день (числа). Вывести, есть ли такой день в этом месяце.
+ */
 import java.util.Scanner;
 
 public class Task2 {
