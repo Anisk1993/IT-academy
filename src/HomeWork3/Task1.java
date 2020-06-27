@@ -3,7 +3,7 @@ package HomeWork3;
 // от 0 до 1000, разделённых пробелами - String
 public class Task1 {
     public static void main(String[] args) {
-    String str = "";
+    String str = " ";
 
         for (int i = 0; i <100 ; i++) {
             str = str.concat((int) (Math.random() * 1000) + " ");
