@@ -15,13 +15,13 @@ public class Task2 {
 
         Pattern pat = Pattern.compile(pattern);
         Matcher m = pat.matcher(str);
-        String str1 = null;
+        String strReplace = null;
         while (m.find()){
             if(m.end() - m.start() == 4) {
-                str1 = m.replaceAll(" -1 ");
+                strReplace = m.replaceAll(" -1 ");
             }
         }
-            System.out.println(str1);
+            System.out.println(strReplace);
 
     }
 }
