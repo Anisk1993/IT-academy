@@ -21,7 +21,7 @@ public class Task2 {
                 strReplace = m.replaceAll(" -1 ");
             }
         }
-            System.out.println(strReplace);
+            System.out.println("Обработанная строка: \n" + strReplace);
 
     }
 }
