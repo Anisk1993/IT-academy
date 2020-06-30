@@ -1,5 +1,7 @@
 package HomeWork3;
-
+/*
+В сформированной строке заменить все двузначные числа на -1. - RegEx - регулярные выражения
+ */
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
