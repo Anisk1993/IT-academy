@@ -17,6 +17,8 @@ public class HashTreeMaps {
             array[i] = i;
         }
 
+        System.out.println("Начало сравнения");
+
         long startTime = System.currentTimeMillis();
         for (int i = 0; i < 10000; i++) {
             String put = hashMap.put(array[i], UUID.randomUUID().toString());
@@ -37,7 +39,7 @@ public class HashTreeMaps {
         long diff1 = endTime1 - startTime1;
         System.out.println("\nДобавление элементов в TreeMap" + "\nЗатраченное время: " + diff1 + " милисекунд");
 
-        if(diff>diff1)
+        if (diff > diff1)
             System.out.println("\nHashMap быстрее работает на добавление элементов");
         else System.out.println("\nTreeMap быстрее работает на добавление элементов");
 
@@ -47,10 +49,9 @@ public class HashTreeMaps {
         long diff2 = endTime2 - startTime2;
         System.out.println("\nВремя затраченное на поиск элемента: " + diff2 + " милисекунд");
 
-        if(contains == true){
+        if (contains == true) {
             System.out.println("Элемент с таким ключем содержится в коллекции HashMap");
         } else System.out.println("такого эдемента нет");
-
 
 
         long startTime3 = System.currentTimeMillis();
@@ -59,7 +60,7 @@ public class HashTreeMaps {
         long diff3 = endTime3 - startTime3;
         System.out.println("\nВремя затраченное на поиск элемента: " + diff3 + " милисекунд");
 
-        if(contains1 == true){
+        if (contains1 == true) {
             System.out.println("Элемент с таким ключем содержится в коллекции TreeMap");
         } else System.out.println("такого эдемента нет");
 
@@ -82,8 +83,6 @@ public class HashTreeMaps {
         long diff5 = endTime5 - startTime5;
 
         System.out.println("\nВремя затраченное на удаоение элементов из TreeMap: " + diff5 + "милисекунд");
-
-
 
 
     }
