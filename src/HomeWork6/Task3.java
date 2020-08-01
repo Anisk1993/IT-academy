@@ -11,14 +11,18 @@ public class Task3 {
         for (int i = 1; i < 11; i++) {
             myQueue.add(i);
         }
-        Scanner scanner = new Scanner(System.in);
+        System.out.println("обозначьте вытягивание введением любого число. " +
+                "\n элементы вытягиваютя по порядку :  ");
         for (int i = 1; i < 11; i++) {
 
-            System.out.println("Обаботка очереди :  ");
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Обработка очередди : ");
+
             int num = scanner.nextInt();
+            System.out.println(num);
 
             Integer int1 = myQueue.poll();
-            System.out.println(int1);
+            System.out.println(num +" : "+ int1);
 
             if (int1 == 5) {
                 System.out.println("Вы выйграли!");
