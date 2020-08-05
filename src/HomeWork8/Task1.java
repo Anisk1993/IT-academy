@@ -6,11 +6,11 @@ import java.util.List;
 public class Task1 {
     public static void main(String[] args) {
 
-        String stringBuilder = "The new license permits certain uses, " +
+        String string = "The new license permits certain uses, " +
                 "such as personal use and development use, at no cost - but other uses authorized " +
                 "under prior Oracle Java licenses may no longer be available";
 
-        String[] wordsArray = stringBuilder.split(" ");
+        String[] wordsArray = string.split(" ");
         List<String> words = Arrays.asList(wordsArray);
         words.stream()
                 .map(String::toLowerCase)
