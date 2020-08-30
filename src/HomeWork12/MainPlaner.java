@@ -58,7 +58,7 @@ public class MainPlaner {
 
         Tasks.forEach(System.out::println);
 
-        System.out.println("Удаление задачи: ");
+        System.out.println("Удаление задачи № ");
         Planer taskDelete = Tasks.get(scanner.nextInt());
 
         Tasks.remove(taskDelete);
